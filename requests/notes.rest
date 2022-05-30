@@ -4,7 +4,11 @@ GET http://localhost:3001/api/notes
 ###
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjE2Z3VpdGFyIiwiaWQiOjEsImlhdCI6MTY1MzkyNjQ2N30.YlUX3hIJalaMNiKX4NE1a3XY-OeaMMr5mkDbshWAsCQ
 
 {
     "content": "Bla is webscale"
 }
+
+###
+DELETE  http://localhost:3001/api/notes/3
