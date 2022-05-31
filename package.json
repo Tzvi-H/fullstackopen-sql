@@ -4,7 +4,8 @@
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.3",
-    "sequelize": "^6.20.1"
+    "sequelize": "^6.20.1",
+    "umzug": "^3.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
@@ -12,6 +13,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "heroku-pg:connect": "heroku run psql -h ec2-34-230-153-41.compute-1.amazonaws.com -p 5432 -U tflncmgxqjafbb da1s779n6ik3bs -a limitless-beyond-63348"
+    "heroku-pg:connect": "heroku run psql -h ec2-34-231-221-151.compute-1.amazonaws.com -p 5432 -U jiehwogatxhdki dekjisoi7ibqoh -a frozen-atoll-93767",
+    "migration:down": "node util/rollback.js"
   }
 }
